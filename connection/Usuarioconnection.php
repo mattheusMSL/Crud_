@@ -1,7 +1,7 @@
 <?php
 
 class Connection {
-    private static $host ="BKM_B";
+    private static $host ="BKM_BD";
     private static $dbname= "projeto_integrador";
     private static $user = "root";
     private static $password = "BKM@2022";

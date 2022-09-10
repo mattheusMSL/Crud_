@@ -59,7 +59,7 @@
         }else{
             $msg="ERRO AO INSERIR O REGISTRO NO BANCO DE DADOS";
         }
-        $this->findAll();
+        $this->findAll($msg);
     }
     private function loadForm(){
         $this->loadView("views/Usuarios/Usuariocadastro.php", null, "teste");

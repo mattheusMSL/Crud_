@@ -1,7 +1,5 @@
 <?php
 
-
-
 require_once __DIR__."/../connection/Usuarioconnection.php";
 require_once __DIR__."/../models/Usuariomodels.php";
 
@@ -53,7 +51,7 @@ class UsuarioRepository{
         $prepare->bindValue(1, $usuario->getNome());
         $prepare->bindValue(2, $usuario->getEmail());
         $prepare->bindValue(3, $usuario->getSenha());
-        $prepare->bindValue(4, $usuario -> getId());
+        $prepare->bindValue(4, $usuario->getId());
         $result= $prepare->execute();
     return $result;                
 
